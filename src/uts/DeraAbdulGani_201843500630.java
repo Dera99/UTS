@@ -447,7 +447,6 @@ public class DeraAbdulGani_201843500630 extends javax.swing.JFrame {
         pst.execute();
         data_barang();
         JOptionPane.showMessageDialog(null, "Data berhasil disimpan");
-        rs.close();
         pst.close();
        }
         }catch(Exception e){
@@ -464,7 +463,6 @@ public class DeraAbdulGani_201843500630 extends javax.swing.JFrame {
              pst.execute();
              data_barang();
              JOptionPane.showMessageDialog(null, "Deleted");
-             rs.close();
              pst.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);    
@@ -493,7 +491,6 @@ public class DeraAbdulGani_201843500630 extends javax.swing.JFrame {
             kadar.setSelectedItem(view5);
             String view6 = rs.getString("Berat");
             berat.setText(view6);
-            rs.close();
             pst.close();
         }
         } catch (Exception e) {
@@ -519,7 +516,6 @@ public class DeraAbdulGani_201843500630 extends javax.swing.JFrame {
             pst.execute();
             data_barang();
             JOptionPane.showMessageDialog(null, "Data Berhasil di Edit");
-            rs.close();
             pst.close();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
