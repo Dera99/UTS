@@ -535,7 +535,7 @@ public class DeraAbdulGani_201843500630 extends javax.swing.JFrame {
     private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
         // TODO add your handling code here:
         try{
-         String query = "SELECT * FROM `data_barang` WHERE `Kode Barang` OR `Nama Barang`  LIKE '%"+keyword.getText()+"%'";
+         String query = "SELECT * FROM `data_barang` WHERE `Kode Barang` LIKE '%"+keyword.getText()+"%'";
          pst = conn.prepareStatement(query);
          rs = pst.executeQuery();
          table.setModel(DbUtils.resultSetToTableModel(rs));
