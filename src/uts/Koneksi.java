@@ -19,7 +19,7 @@ public class Koneksi {
     public static Connection getConnection(){
        try{
            Class.forName("com.mysql.cj.jdbc.Driver");
-           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/UTS_PemVis","root","1234");
+           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/UTS_PemVis","root","");
 //           JOptionPane.showMessageDialog(null, "Connection Succeed");
            return conn;
        }catch(Exception e){
